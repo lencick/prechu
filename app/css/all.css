@@ -1,31 +1,13 @@
+@charset "UTF-8";
 @font-face {
-  font-family: 'PFSquareSansPro';
-  src: url("../fonts/PFSquareSansPro/PFSquareSansPro.eot");
-  src: local("PFSquareSansPro"), url("../fonts/PFSquareSansPro/PFSquareSansPro.woff") format("woff"), url("../fonts/PFSquareSansPro/PFSquareSansPro.ttf") format("truetype"); }
+  font-family: 'MyriadProRegular';
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+  src: local("MyriadProRegular"), url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype"); }
 
-*::-webkit-input-placeholder {
-  color: #666;
-  opacity: 1; }
-
-*:-moz-placeholder {
-  color: #666;
-  opacity: 1; }
-
-*::-moz-placeholder {
-  color: #666;
-  opacity: 1; }
-
-*:-ms-input-placeholder {
-  color: #666;
-  opacity: 1; }
-
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-  color: #666; }
-
-body input:required:valid,
-body textarea:required:valid {
-  color: #666; }
+@font-face {
+  font-family: 'SegoeWP';
+  src: url("../fonts/SegoeWP/SegoeWP.eot");
+  src: local("SegoeWP"), url("../fonts/SegoeWP/SegoeWP.woff") format("woff"), url("../fonts/SegoeWP/SegoeWP.ttf") format("truetype"); }
 
 * {
   margin: 0;
@@ -33,16 +15,139 @@ body textarea:required:valid {
 
 body {
   background: #fff;
-  font-family: "";
+  font-family: "SegoeWP";
   min-width: 320px;
   font-size: 25px;
-  color: #232020; }
+  color: #909090; }
 
 .content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
   overflow: hidden; }
+
+header h1 a {
+  color: #000;
+  float: left;
+  padding-left: 60px;
+  font-family: "SegoeWP";
+  margin: 15px 0 10px;
+  font-size: 42px;
+  font-weight: 300;
+  text-decoration: none;
+  position: relative; }
+  header h1 a:before {
+    background-color: #5094f2;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    color: #fff;
+    content: "“";
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 64px;
+    height: 44px;
+    line-height: 1.1;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    width: 44px; }
+
+header nav {
+  float: right;
+  position: relative; }
+  header nav li {
+    display: inline-block;
+    margin: 0 10px; }
+    header nav li a {
+      text-decoration: none;
+      font-family: "SegoeWP";
+      padding: 40px 5px 15px;
+      display: block;
+      color: #6c6c6c;
+      font-size: 20px;
+      font-weight: 400;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      border-bottom: 3px solid transparent; }
+      header nav li a:hover, header nav li a.active {
+        border-bottom: 3px solid #5094f2; }
+
+.slider .slid {
+  position: relative; }
+  .slider .slid > img {
+    width: 100%; }
+  .slider .slid .slid_content {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 900px;
+    left: 50%; }
+    .slider .slid .slid_content img {
+      width: 33%;
+      float: left; }
+    .slider .slid .slid_content .text {
+      float: right;
+      width: 70%;
+      color: #fff;
+      line-height: 46px;
+      left: 48%;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translate(0px, -50%);
+          -ms-transform: translate(0px, -50%);
+              transform: translate(0px, -50%); }
+      .slider .slid .slid_content .text h2 {
+        font-size: 42px;
+        margin-bottom: 5px;
+        font-weight: 400; }
+      .slider .slid .slid_content .text p {
+        font-size: 26px; }
+      .slider .slid .slid_content .text button {
+        color: white;
+        font-family: "SegoeWP";
+        font-size: 22px;
+        font-weight: 400;
+        background-color: #5094f2;
+        border: none;
+        position: relative;
+        padding: 3px 10px 8px 40px;
+        -webkit-border-radius: 3px;
+                border-radius: 3px;
+        margin: 15px;
+        cursor: pointer; }
+        .slider .slid .slid_content .text button:before {
+          content: "";
+          background-image: url("../img/but.png");
+          width: 23px;
+          height: 23px;
+          left: 8px;
+          top: 8px;
+          position: absolute; }
+
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 50%;
+  background-image: url("../img/nav.png");
+  display: block;
+  height: 63px;
+  width: 25px;
+  opacity: 0.75; }
+  .owl-prev:hover, .owl-next:hover {
+    opacity: 1; }
+
+.owl-prev {
+  left: 8%; }
+
+.owl-next {
+  right: 8%;
+  background-position: 25px 0; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
