@@ -202,6 +202,35 @@ header nav {
           -ms-transform: translate(-50%, 0px);
               transform: translate(-50%, 0px); }
 
+.shopping h2 {
+  color: #6f7173;
+  font-size: 42px;
+  line-height: 44px; }
+
+.shopping img {
+  margin-top: 35px; }
+
+.shopping .text {
+  width: 50%;
+  float: right;
+  margin-bottom: 45px; }
+
+.shopping h3 {
+  color: #6f7173;
+  font-size: 26px;
+  line-height: 55px; }
+
+.shopping p {
+  font-size: 15px;
+  margin: 15px 0; }
+
+footer {
+  text-align: center;
+  border-top: 1px solid #ededed; }
+  footer p {
+    font-size: 15px;
+    margin: 30px 0; }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
