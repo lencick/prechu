@@ -136,5 +136,54 @@ header
 	@extend %owl-base
 	right: 8%
 	background-position: 25px 0
+.about
+	text-align: center
+	position: relative
+	padding-top: 60px
+	margin-bottom: 90px
+	&:before
+		background-image: url("../img/border.png")
+		height: 9px
+		top: -14px
+		left: 0
+		width: 100%
+		content: ""
+		position: absolute
+		z-index: 999
+	.icon
+		width: 24%			
+		display: inline-block
+		margin-right: 10%
+		position: relative
+		padding-top: 200px
+		&:last-child
+			margin-right: 0
+		h3
+			color: $main_color
+			font-size: 20px
+			line-height: 44px
+		p
+			color: $color_text
+			font-size: 14px
+		&:nth-child(1):after
+			background-color: #5094f2
+			background-image: url("../img/icon/1.png")
+		&:nth-child(2):after
+			background-color: #d94748
+			background-image: url("../img/icon/2.png")
+		&:nth-child(3):after
+			background-color: #ebbb11
+			background-image: url("../img/icon/3.png")
+		&:after
+			content: ""
+			background-repeat: no-repeat
+			width: 186px
+			height: 186px
+			background-position: center
+			border-radius: 50%
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translate(-50%, 0px)
 
 @import "_media"
