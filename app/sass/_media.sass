@@ -12,7 +12,20 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	
+	.toggle-mnu
+		display: block
+	header nav
+		display: none
+		background-color: rgba(255, 255, 255, 0.9)
+		float: right
+		left: 0
+		position: absolute
+		text-align: center
+		top: 70px
+		width: 100%
+		z-index: 999
+		li a
+			padding: 15px 5px
 	/*Disable Animation on Mobile Devices*/
 	.animated
 		/*CSS transitions*/
@@ -43,7 +56,8 @@
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
-
+	.toggle-mnu
+		display: block
 
 /*==========  Mobile First Method  ==========*/
 

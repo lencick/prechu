@@ -1,4 +1,10 @@
 $(document).ready(function() {
+
+	$(".toggle-mnu").click(function() {
+		$(this).toggleClass("on");
+		$("nav").slideToggle();
+	});
+	
     $(".slider").owlCarousel({
 		items : 1,
 		nav : true,
