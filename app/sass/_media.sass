@@ -26,6 +26,67 @@
 		z-index: 999
 		li a
 			padding: 15px 5px
+	.slider .slid .slid_content
+		.text
+			line-height: 36px
+			width: 73%
+			left: 39%
+			h2
+				font-size: 30px
+				font-weight: 400
+			p
+				font-size: 23px
+			button
+				font-size: 31px
+				padding: 3px 10px 8px 50px
+				margin: 15px 0
+				&:before
+					width: 28px
+					height: 28px
+					left:  11px
+					top: 13px
+					background-size: 100%
+	.owl-prev, .owl-next
+		display: none !important
+	.about
+		padding-top: 0
+		margin-bottom: 45px
+		.content
+			padding: 0
+		&:before
+			display: none
+		.icon
+			width: 100%
+			padding: 0 0 0 34%
+			text-align: left
+			border-bottom: 1px solid #ededed
+			h3
+				font-size: 34px
+				padding: 47px 0 7px
+			p
+				font-size: 19px
+				padding: 0 0 43px 7px
+				width: 51%
+			&:after
+				width: 136px
+				height: 136px
+				left: 5%
+				background-size: 50%
+				top: 50%
+				transform: translate(0px, -50%)
+	.shopping
+		h2
+			text-align: center
+		img
+			display: block
+			margin: 35px auto 0
+			width: 41%
+		.text
+			width: 92%
+		h3
+			font-size: 34px
+		p
+			font-size: 17px
 	/*Disable Animation on Mobile Devices*/
 	.animated
 		/*CSS transitions*/
@@ -51,7 +112,52 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
-
+	header nav
+		padding-bottom: 15px
+		li 
+			display: block
+			margin: 0 auto
+			width: 107px
+	.slider 
+		.slid
+			position: relative
+			&>img
+				width: 200%
+			.slid_content
+				img
+					width: 39%
+				.text
+					line-height: 32px
+					width: 63%
+					left: 41%
+					h2
+						font-size: 25px
+					p
+						font-size: 19px
+					button
+						font-size: 21px
+						&:before
+							top: 6px
+	.about
+		.icon
+			h3
+				font-size: 23px
+			p
+				font-size: 16px
+				width: 60%
+			&:after
+				width: 95px
+				height: 95px
+				left: 3%
+	.shopping
+		h2
+			font-size: 34px
+		img
+			width: 55%
+		h3
+			font-size: 27px
+		p
+			font-size: 16px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

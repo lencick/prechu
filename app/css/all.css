@@ -304,6 +304,67 @@ footer {
     z-index: 999; }
     header nav li a {
       padding: 15px 5px; }
+  .slider .slid .slid_content .text {
+    line-height: 36px;
+    width: 73%;
+    left: 39%; }
+    .slider .slid .slid_content .text h2 {
+      font-size: 30px;
+      font-weight: 400; }
+    .slider .slid .slid_content .text p {
+      font-size: 23px; }
+    .slider .slid .slid_content .text button {
+      font-size: 31px;
+      padding: 3px 10px 8px 50px;
+      margin: 15px 0; }
+      .slider .slid .slid_content .text button:before {
+        width: 28px;
+        height: 28px;
+        left: 11px;
+        top: 13px;
+        background-size: 100%; }
+  .owl-prev, .owl-next {
+    display: none !important; }
+  .about {
+    padding-top: 0;
+    margin-bottom: 45px; }
+    .about .content {
+      padding: 0; }
+    .about:before {
+      display: none; }
+    .about .icon {
+      width: 100%;
+      padding: 0 0 0 34%;
+      text-align: left;
+      border-bottom: 1px solid #ededed; }
+      .about .icon h3 {
+        font-size: 34px;
+        padding: 47px 0 7px; }
+      .about .icon p {
+        font-size: 19px;
+        padding: 0 0 43px 7px;
+        width: 51%; }
+      .about .icon:after {
+        width: 136px;
+        height: 136px;
+        left: 5%;
+        background-size: 50%;
+        top: 50%;
+        -webkit-transform: translate(0px, -50%);
+            -ms-transform: translate(0px, -50%);
+                transform: translate(0px, -50%); }
+  .shopping h2 {
+    text-align: center; }
+  .shopping img {
+    display: block;
+    margin: 35px auto 0;
+    width: 41%; }
+  .shopping .text {
+    width: 92%; }
+  .shopping h3 {
+    font-size: 34px; }
+  .shopping p {
+    font-size: 17px; }
   /*Disable Animation on Mobile Devices*/
   .animated {
     /*CSS transitions*/
@@ -319,7 +380,48 @@ footer {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  /**/ }
+  /**/
+  header nav {
+    padding-bottom: 15px; }
+    header nav li {
+      display: block;
+      margin: 0 auto;
+      width: 107px; }
+  .slider .slid {
+    position: relative; }
+    .slider .slid > img {
+      width: 200%; }
+    .slider .slid .slid_content img {
+      width: 39%; }
+    .slider .slid .slid_content .text {
+      line-height: 32px;
+      width: 63%;
+      left: 41%; }
+      .slider .slid .slid_content .text h2 {
+        font-size: 25px; }
+      .slider .slid .slid_content .text p {
+        font-size: 19px; }
+      .slider .slid .slid_content .text button {
+        font-size: 21px; }
+        .slider .slid .slid_content .text button:before {
+          top: 6px; }
+  .about .icon h3 {
+    font-size: 23px; }
+  .about .icon p {
+    font-size: 16px;
+    width: 60%; }
+  .about .icon:after {
+    width: 95px;
+    height: 95px;
+    left: 3%; }
+  .shopping h2 {
+    font-size: 34px; }
+  .shopping img {
+    width: 55%; }
+  .shopping h3 {
+    font-size: 27px; }
+  .shopping p {
+    font-size: 16px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
